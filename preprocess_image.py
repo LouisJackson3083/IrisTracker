@@ -35,16 +35,16 @@ class Preprocessor():
 
 preprocessor = Preprocessor()
 cv2.namedWindow('Image')
-# cv2.createTrackbar('lower_h', 'Image', preprocessor.hsv_vars[0], 255, lambda x: preprocessor.hsv_callback(x, 0))
-# cv2.createTrackbar('lower_s', 'Image', preprocessor.hsv_vars[1], 255, lambda x: preprocessor.hsv_callback(x, 1))
-# cv2.createTrackbar('lower_v', 'Image', preprocessor.hsv_vars[2], 255, lambda x: preprocessor.hsv_callback(x, 2))
-# cv2.createTrackbar('upper_h', 'Image', preprocessor.hsv_vars[3], 255, lambda x: preprocessor.hsv_callback(x, 3))
-# cv2.createTrackbar('upper_s', 'Image', preprocessor.hsv_vars[4], 255, lambda x: preprocessor.hsv_callback(x, 4))
-# cv2.createTrackbar('upper_v', 'Image', preprocessor.hsv_vars[5], 255, lambda x: preprocessor.hsv_callback(x, 5))
-cv2.createTrackbar('erode_kernel', 'Image', preprocessor.kernel_vars[0], 21, lambda x: preprocessor.kernel_callback(x, 0))
-cv2.createTrackbar('erode_iterations', 'Image', preprocessor.kernel_vars[2], 21, lambda x: preprocessor.kernel_callback(x, 2))
-cv2.createTrackbar('dilate_kernel', 'Image', preprocessor.kernel_vars[1], 21, lambda x: preprocessor.kernel_callback(x, 1))
-cv2.createTrackbar('dilate_iterations', 'Image', preprocessor.kernel_vars[3], 21, lambda x: preprocessor.kernel_callback(x, 3))
+cv2.createTrackbar('lower_h', 'Image', preprocessor.hsv_vars[0], 255, lambda x: preprocessor.hsv_callback(x, 0))
+cv2.createTrackbar('lower_s', 'Image', preprocessor.hsv_vars[1], 255, lambda x: preprocessor.hsv_callback(x, 1))
+cv2.createTrackbar('lower_v', 'Image', preprocessor.hsv_vars[2], 255, lambda x: preprocessor.hsv_callback(x, 2))
+cv2.createTrackbar('upper_h', 'Image', preprocessor.hsv_vars[3], 255, lambda x: preprocessor.hsv_callback(x, 3))
+cv2.createTrackbar('upper_s', 'Image', preprocessor.hsv_vars[4], 255, lambda x: preprocessor.hsv_callback(x, 4))
+cv2.createTrackbar('upper_v', 'Image', preprocessor.hsv_vars[5], 255, lambda x: preprocessor.hsv_callback(x, 5))
+# cv2.createTrackbar('erode_kernel', 'Image', preprocessor.kernel_vars[0], 21, lambda x: preprocessor.kernel_callback(x, 0))
+# cv2.createTrackbar('erode_iterations', 'Image', preprocessor.kernel_vars[2], 21, lambda x: preprocessor.kernel_callback(x, 2))
+# cv2.createTrackbar('dilate_kernel', 'Image', preprocessor.kernel_vars[1], 21, lambda x: preprocessor.kernel_callback(x, 1))
+# cv2.createTrackbar('dilate_iterations', 'Image', preprocessor.kernel_vars[3], 21, lambda x: preprocessor.kernel_callback(x, 3))
 
 
 
